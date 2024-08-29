@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class fruitshopcheckout {
+    public static void main(String[] args) {
+
+        /**
+         * This GPA calculator was created by @uygarkaan.
+         * You can find more projects and tutorials at https://github.com/uygarkaan
+         */
+        
+        Scanner scanner = new Scanner(System.in);
+
+        // Define the price per kilogram for each item
+        double pearPrice = 2.14;
+        double applePrice = 3.67;
+        double tomatoPrice = 1.11;
+        double bananaPrice = 0.95;
+        double eggplantPrice = 5.00;
+
+        // Prompt the user to enter the quantity for each item
+        System.out.println("Enter the quantity of Pear (in KG): ");
+        double pearKg = scanner.nextDouble();
+        double pearCost = pearKg * pearPrice;
+
+        System.out.println("Enter the quantity of Apple (in KG): ");
+        double appleKg = scanner.nextDouble();
+        double appleCost = appleKg * applePrice;
+
+        System.out.println("Enter the quantity of Tomato (in KG): ");
+        double tomatoKg = scanner.nextDouble();
+        double tomatoCost = tomatoKg * tomatoPrice;
+
+        System.out.println("Enter the quantity of Banana (in KG): ");
+        double bananaKg = scanner.nextDouble();
+        double bananaCost = bananaKg * bananaPrice;
+
+        System.out.println("Enter the quantity of Eggplant (in KG): ");
+        double eggplantKg = scanner.nextDouble();
+        double eggplantCost = eggplantKg * eggplantPrice;
+
+
+        double totalCost = pearCost + appleCost + tomatoCost + bananaCost + eggplantCost;
+        System.out.println("Total Cost: " + totalCost);
+
+        // Print the cost for each item
+        System.out.println("Item Summary:");
+        System.out.println("Pear (KG): " + pearKg + " Cost: " + pearCost + " $ ");
+        System.out.println("Apple (KG): " + appleKg + " Cost: " + appleCost + " $ ");
+        System.out.println("Tomato (KG): " + tomatoKg + " Cost: " + tomatoCost + " $ ");
+        System.out.println("Banana (KG): " + bananaKg + " Cost: " + bananaCost + " $ ");
+        System.out.println("Eggplant (KG): " + eggplantKg + " Cost: " + eggplantCost + " $ ");
+        System.out.println("Total Cost: " + totalCost + " $ ");
+
+
+        // Thank the user for their order
+        System.out.println("Thank you for your order, we hope to see you again.");
+
+        scanner.close();
+    }
+}
+
